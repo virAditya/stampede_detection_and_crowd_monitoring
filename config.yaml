@@ -1,0 +1,24 @@
+# Model configuration
+model_path: "data/Crowd_Density_Final.pt"
+
+# Grid configuration
+grid_w: 20
+grid_h: 12
+
+# Processing configuration
+img_size: 1120
+target_fps: 2.0
+conf_threshold: 0.30
+iou_threshold: 0.50
+
+# Camera configurations
+cameras:
+  Cam_1:
+    video: "data/gettyimages-1304341780-640_adpp.mp4"
+    name: "Camera 1 - Entrance"
+  Cam_2:
+    video: "data/gettyimages-80823183-640_adpp.mp4"
+    name: "Camera 2 - Main Hall"
+  Cam_3:
+    video: "data/gettyimages-1422491007-640_adpp.mp4"
+    name: "Camera 3 - Exit Area"
